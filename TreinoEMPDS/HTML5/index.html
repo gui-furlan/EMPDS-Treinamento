@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Styles -->
+    <style>
+        h3 {
+            display: flex;
+            background: red;
+        }
+
+        p {
+            display: flex;
+            background: gray;
+        }
+
+        span {
+            background: yellowgreen;
+
+        }
+
+        .img-steam {
+            display: flex;
+            width: 44px;
+            height: 44px;
+        }
+        pre{
+            display:flex;
+        }
+    </style>
+</head>
+
+<body>
+    <p>teste<sup>teste2</sup></p>
+    <h3>ANALISANDO</h3>
+    <img class="img-steam"
+        src="data:image/png;base64,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"
+        alt="Logo da steam" />
+    <!-- Paragráfo com citação -->
+    <p><q>Lorem dolor sit amet consectetur adipisicing elit. Impedit amet hic, repudiandae ipsam harum consectetur
+            perferendis, neque praesentium soluta delectus quod accusamus iusto enim labore laborum modi illum, eius
+            quidem?</q></p>
+    <span style="display: flex; width: 100%; border: 2px solid black; border-radius: 5px;">Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Magni fugit autem atque ipsum, illum perspiciatis quae ad modi? Incidunt nobis
+        nesciunt dolorem beatae provident officiis ex non a architecto quo!</span>
+
+    <blockquote cite="url da citação">Citação com referências</blockquote>
+    <!-- conserva a formatação de texto como está escrita -->
+    <pre>
+        <!-- geralmente usada em sites que contém código, tutoriais, etc... -->
+        <code>const animals = ['pigs', 'goats', 'sheep'];
+
+        const count = animals.push('cows');
+        console.log(count);
+        // Expected output: 4
+        console.log(animals);
+        // Expected output: Array ["pigs", "goats", "sheep", "cows"]
+        
+        animals.push('chickens', 'cats', 'dogs');
+        console.log(animals);
+        // Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+        </code>
+        </pre>
+
+</body>
+
+</html>

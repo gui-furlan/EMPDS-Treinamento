@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+  
+}
+/* Pega menos específico */
+h1, p{
+color: blueviolet;
+}
+/* Mais específico */
+body div section p,
+body div section h1{
+    color: rgb(0, 136, 255);
+
+}
+/* OUtro tipo de seleção */
+.heading{
+    color: black;
+    
+}

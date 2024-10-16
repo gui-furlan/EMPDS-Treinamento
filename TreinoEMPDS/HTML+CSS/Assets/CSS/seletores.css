@@ -1,0 +1,56 @@
+
+/* Seletor de irmãos */
+/* Para um seletor pai, encontre um p que vier depois de um h1, ele é pra um, 
+ou seja, pega o primeiro que encontra com essa condição */
+.pai  h1+p{
+    color: rgb(15, 121, 121);
+}
+/* Seletor de irmãos */
+/* Para um seletor pai, encontre um h1 que vier depois de um p, ele é pra un*/
+.pai  p+h1{
+    color: rgb(224, 0, 0);
+}
+/* Esse é pra pegar todos os p */
+/* .pai h1~p{
+color: darkorchid;
+} */
+
+/* PEga todos os 2 que vem depois de algum 1 */
+.pai .um~.dois{
+    color: rgb(0, 255, 21);
+}
+
+/* Seleeção de um aributo com valor, se mudar o "valor", minha propriedade não será pega, o ~é só pra pegar todos*/
+[meu-atributo~="valor2"]{
+    color: fuchsia;
+}
+/* Para valores separados por"-"  */
+/* [meu-atributo|="valor2"]{
+    color: fuchsia;
+} */
+[checked]{
+    color: fuchsia;
+    width: 50px;
+    height: 50px;
+}
+.heading:hover{
+    color: aqua;
+}
+.heading{
+    transition: all 50ms ease-in-out;
+}
+
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    border: 1px solid black;
+    outline: none;
+}
+input:disabled{
+    background-color: aquamarine;
+    cursor: not-allowed;
+} 
+p:not(.meio){
+    color: rgb(17, 143, 59);
+}
+
+
