@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    
     <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
     <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
@@ -106,7 +107,7 @@
     <section id="contato" class="main-bg section">
         <div class="main-content intro-content">
             
-            <div class="contact-form">
+            <div id="my-form" class="contact-form">
                <fieldset class="form-grid">
                 <legend>Contate-me</legend>
                 <div class="form-group">
@@ -125,8 +126,9 @@
                     <label for="message">Mensagem</label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Escreva uma mensagem..."></textarea>    
                 </div>
+                <div class="error-msg"></div>
                 <div class="form-group full-width">
-                    <button type="submit">Enviar</button>
+                    <button id="submit-button" class="btn" type="submit">Enviar</button>
                 </div>
                </fieldset>
             </div>
@@ -136,6 +138,7 @@
         <p><a target="_blank" href="https://github.com/LucasRayzer"> Feito por Lucas Rayzer</a></p>
     </footer>
     <a class="back-to-top" href="#">➤</a>
+    <script src="main.js"></script>
 </body>
 
 </html>

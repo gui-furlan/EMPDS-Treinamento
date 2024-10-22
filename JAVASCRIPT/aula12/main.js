@@ -20,7 +20,7 @@ addUserText.textContent = "Adicionar usuário";
 
 //dentro do formulário
 //pegar id my form dentro da classe container
-const myForm = document.querySelector(".container #my-form");
+const myForm = document.querySelector("#my-form");
 console.log(myForm);
 
 //SELECIONA UM ELEMENTO - 1 ITEM
@@ -57,3 +57,27 @@ const items = document.querySelector(".items");
 const button = document.querySelector(".btn");
 
 button.style.background = "red";
+
+//evento aula 14
+
+const submitBtn = document.querySelector("#submit-button");
+const submitName = document.querySelector("#name");
+const submitEmail = document.querySelector("#email");
+
+submitBtn.addEventListener("click", function click(e) {
+  //impedir comportamento padrão, que é enviar o submit e atualizar a página, posso usar pra teste
+  e.preventDefault();
+  const valorNome = submitName.value;
+  const valorEmail = submitEmail.value;
+
+  if (valorNome === "" || valorEmail === "") {
+    alert("Preencha todos os campos!");
+  }
+  if (valorNome !== "" && valorEmail !== "") {
+    items.children[0].textContent = valorNome;
+    items.children[1].textContent = valorEmail;
+  }
+  console.log(valorNome);
+  console.log(valorEmail);
+  myForm.style.background = "lightBlue";
+});
