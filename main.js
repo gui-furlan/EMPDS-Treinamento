@@ -10,16 +10,21 @@ submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   const FirstName = submitFirstName.value;
-  console.log(FirstName);
-  const LastName = submitLastName.value;
-  console.log(LastName);
-  const email = submitEmail.value;
-  console.log(email);
-  const message = submitMessage.value;
-  console.log(message);
 
-  if (FirstName === "" || LastName === "" || email === "" || message === "") {
+  const LastName = submitLastName.value;
+
+  const email = submitEmail.value;
+
+  const message = submitMessage.value;
+
+  if (FirstName !== "" && LastName !== "" && email !== "" && message !== "") {
+    errorMsg.textContent = "";
+    console.log(FirstName);
+    console.log(LastName);
+    console.log(email);
+    console.log(message);
+  } else {
     errorMsg.textContent = "Por favor, preencha todos os campos!";
     errorMsg.classList = "error";
-  } else errorMsg.textContent = "";
+  }
 });
