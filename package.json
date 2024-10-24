@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "-": "^0.0.1",
+    "es6-module-transpiler": "^0.10.0"
+  }
+}
