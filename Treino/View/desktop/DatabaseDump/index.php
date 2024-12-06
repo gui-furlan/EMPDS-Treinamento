@@ -1,0 +1,1 @@
+<?php require_once(DIR_MODULES . '/' . DEFAULT_APP . '//BaseEmpds//' . DIR_VIEWS . '//DatabaseDump//' . $GLOBALS['url']->getNameAction() . '.php'); ?>
