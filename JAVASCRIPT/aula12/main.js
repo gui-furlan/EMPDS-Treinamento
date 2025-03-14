@@ -22,7 +22,6 @@ addUserText.textContent = "Adicionar usuário";
 //pegar id my form dentro da classe container
 const myForm = document.querySelector("#my-form");
 console.log(myForm);
-console.log("guasca");
 
 //SELECIONA UM ELEMENTO - 1 ITEM
 //const myForm = document.querySelector(".item");
