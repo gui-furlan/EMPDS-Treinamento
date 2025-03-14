@@ -23,6 +23,7 @@ addUserText.textContent = "Adicionar usuário";
 const myForm = document.querySelector("#my-form");
 console.log(myForm);
 console.log("guasca");
+console.log("tadala");
 
 //SELECIONA UM ELEMENTO - 1 ITEM
 //const myForm = document.querySelector(".item");
